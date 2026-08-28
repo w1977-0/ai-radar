@@ -78,7 +78,7 @@ COMPANIES = [
      ""),
     ("qwen", "Qwen",
      ["qwen"],
-     "https://openrss.org/qwenlm.github.io"),
+     "https://rsshub.bestblogs.dev/qwen/blog"),
     ("zhipu", "Zhipu (GLM)",
      ["zhipu", "glm"],
      ""),

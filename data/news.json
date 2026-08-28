@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T07:13:59.772762+00:00",
+  "generated_at": "2026-08-28T07:26:12.125663+00:00",
   "hn_window_days": 7,
   "min_hn_points": 30,
   "min_hn_comments": 5,
@@ -67,8 +67,8 @@
           "title": "Show HN: The load-bearing vocabulary of Claude",
           "url": "https://louisabraham.github.io/load-bearing/",
           "hn_url": "https://news.ycombinator.com/item?id=49461817",
-          "points": 448,
-          "num_comments": 212,
+          "points": 454,
+          "num_comments": 215,
           "created_at": "2026-08-27T08:59:49Z",
           "author": "Labo333",
           "source": "community",
@@ -97,7 +97,7 @@
           "title": "Gemini-3.5-Transcribe",
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
           "hn_url": "https://news.ycombinator.com/item?id=49468818",
-          "points": 244,
+          "points": 248,
           "num_comments": 77,
           "created_at": "2026-08-27T18:03:42Z",
           "author": "k9294",
@@ -109,7 +109,7 @@
           "title": "Gemini Omni 1.1 Flash",
           "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
           "hn_url": "https://news.ycombinator.com/item?id=49467922",
-          "points": 226,
+          "points": 228,
           "num_comments": 159,
           "created_at": "2026-08-27T17:06:32Z",
           "author": "saretup",
@@ -140,7 +140,7 @@
           "url": "https://github.com/SenteLabsAI/OpenExecutive",
           "hn_url": "https://news.ycombinator.com/item?id=49458418",
           "points": 963,
-          "num_comments": 661,
+          "num_comments": 662,
           "created_at": "2026-08-27T01:46:22Z",
           "author": "GrumpySciGuy",
           "source": "community",
@@ -204,48 +204,11 @@
     "alibaba": {
       "name": "Alibaba (Qwen)",
       "rss_url": "",
-      "stories": [
-        {
-          "title": "Qwen3.8-Flash-Next",
-          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
-          "hn_url": "https://news.ycombinator.com/item?id=49448210",
-          "points": 692,
-          "num_comments": 232,
-          "created_at": "2026-08-26T12:52:12Z",
-          "author": "tosh",
-          "source": "community",
-          "matched_rss": "",
-          "match_score": 0
-        },
-        {
-          "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
-          "url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/",
-          "hn_url": "https://news.ycombinator.com/item?id=49407507",
-          "points": 368,
-          "num_comments": 152,
-          "created_at": "2026-08-23T10:02:51Z",
-          "author": "raybb",
-          "source": "community",
-          "matched_rss": "",
-          "match_score": 0
-        },
-        {
-          "title": "Qwen 3.8-Flash-Next releasing tomorrow (125B a6B)",
-          "url": "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
-          "hn_url": "https://news.ycombinator.com/item?id=49432317",
-          "points": 334,
-          "num_comments": 168,
-          "created_at": "2026-08-25T11:49:43Z",
-          "author": "garo-pro",
-          "source": "community",
-          "matched_rss": "",
-          "match_score": 0
-        }
-      ]
+      "stories": []
     },
     "qwen": {
       "name": "Qwen",
-      "rss_url": "https://openrss.org/qwenlm.github.io",
+      "rss_url": "https://rsshub.bestblogs.dev/qwen/blog",
       "stories": [
         {
           "title": "Qwen3.8-Flash-Next",
@@ -255,9 +218,9 @@
           "num_comments": 232,
           "created_at": "2026-08-26T12:52:12Z",
           "author": "tosh",
-          "source": "community",
-          "matched_rss": "",
-          "match_score": 0
+          "source": "official",
+          "matched_rss": "Qwen3.8-Flash-Next：全新架构，迈向极致性价比",
+          "match_score": 3
         },
         {
           "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
@@ -279,9 +242,9 @@
           "num_comments": 168,
           "created_at": "2026-08-25T11:49:43Z",
           "author": "garo-pro",
-          "source": "community",
-          "matched_rss": "",
-          "match_score": 0
+          "source": "official",
+          "matched_rss": "Qwen3.8-Flash-Next：全新架构，迈向极致性价比",
+          "match_score": 3
         }
       ]
     },
@@ -335,8 +298,8 @@
           "title": "Show HN: We built open OpenRouter that turns usage into a better model",
           "url": "https://github.com/experientiallabs/experiential",
           "hn_url": "https://news.ycombinator.com/item?id=49471407",
-          "points": 163,
-          "num_comments": 27,
+          "points": 166,
+          "num_comments": 28,
           "created_at": "2026-08-27T21:18:35Z",
           "author": "SilenN",
           "source": "community",
@@ -430,7 +393,7 @@
           "title": "Nvidia agrees to acquire Hugging Face for $13B",
           "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
           "hn_url": "https://news.ycombinator.com/item?id=49458161",
-          "points": 1878,
+          "points": 1880,
           "num_comments": 867,
           "created_at": "2026-08-27T01:12:55Z",
           "author": "mfiguiere",
@@ -455,7 +418,7 @@
           "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast/",
           "hn_url": "https://news.ycombinator.com/item?id=49466052",
           "points": 104,
-          "num_comments": 100,
+          "num_comments": 101,
           "created_at": "2026-08-27T15:04:16Z",
           "author": "kuuuzya",
           "source": "community",
