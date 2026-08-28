@@ -1,0 +1,146 @@
+{
+  "changes": [
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "sakana/fugu-ultra",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 30.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "openai/gpt-chat-latest",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 30.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "openai/gpt-5.5",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 30.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "anthropic/claude-opus-4.1:batch",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 37.5
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "google/gemini-2.5-pro",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 10.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "google/gemini-2.5-pro-preview",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 10.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "anthropic/claude-sonnet-5",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 10.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "~google/gemini-pro-latest",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 12.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "~anthropic/claude-sonnet-latest",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 10.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "~openai/gpt-latest",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 10.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 1.1
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "perceptron/perceptron-mk1",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 1.5
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "qwen/qwen3-next-80b-a3b-thinking",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 1.2
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "stepfun/step-3.7-flash",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 1.15
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "minimax/minimax-01",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 1.1
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "nex-agi/nex-n2-pro",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 1.0
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "ibm-granite/granite-4.0-h-micro",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 0.112
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "mistralai/mistral-nemo",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 0.03
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "inclusionai/ling-3.0-flash",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 0.063
+    },
+    {
+      "timestamp": "2026-08-28T03:23:45.176906+00:00",
+      "model": "nex-agi/nex-n2-mini",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 0.09999999999999999
+    }
+  ],
+  "last_run": "2026-08-28T03:23:45.176906+00:00",
+  "total_changes_tracked": 20
+}

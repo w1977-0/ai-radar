@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar — frontier model pricing & AI company news</title>
+<meta name="description" content="AI API pricing & news tracker · 20 frontier models + 12 AI companies, cross-validated via Hacker News + RSS. Updated every 6 hours.">
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; -webkit-font-smoothing: antialiased; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 48px 24px; }
+  header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid #e5e5e5; }
+  h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .tagline { color: #555; font-size: 1rem; }
+  .meta { color: #888; font-size: 0.85rem; margin-top: 8px; }
+  h2 { font-size: 1.4rem; font-weight: 600; margin: 40px 0 16px; letter-spacing: -0.01em; }
+  h3 { font-size: 1.05rem; font-weight: 600; margin: 24px 0 8px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden; margin-bottom: 24px; }
+  th, td { padding: 10px 14px; text-align: left; font-size: 0.9rem; border-bottom: 1px solid #eee; }
+  th { background: #f5f5f5; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  td.id { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.82rem; }
+  td.price { font-variant-numeric: tabular-nums; text-align: right; }
+  .tier-S { border-left: 3px solid #c0392b; }
+  .tier-A { border-left: 3px solid #d68910; }
+  .tier-B { border-left: 3px solid #229954; }
+  .tier-C { border-left: 3px solid #5b6e8c; }
+  .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .news-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 16px; }
+  .news-card h4 { font-size: 0.92rem; font-weight: 600; margin-bottom: 6px; }
+  .news-card h4 a { color: #1a1a1a; text-decoration: none; }
+  .news-card h4 a:hover { text-decoration: underline; }
+  .news-card .company { color: #888; font-size: 0.78rem; margin-bottom: 6px; }
+  .news-card .source { display: inline-block; font-size: 0.72rem; padding: 1px 6px; border-radius: 3px; margin-top: 6px; }
+  .source-official { background: #d4edda; color: #155724; }
+  .source-community { background: #fff3cd; color: #856404; }
+  .empty { color: #888; font-style: italic; padding: 12px; }
+  .footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e5e5e5; color: #888; font-size: 0.82rem; text-align: center; }
+  @media (max-width: 600px) { .container { padding: 32px 16px; } h1 { font-size: 1.6rem; } table { font-size: 0.82rem; } }
+
+</style>
+</head><body>
+<div class="container">
+<header>
+<h1>AI Radar</h1>
+<div class="tagline">Frontier model pricing &amp; AI company news — 20 models, 12 companies, cross-validated.</div>
+<div class="meta">Last run: 2026-08-28 03:23:45 UTC · Source: <a href="https://openrouter.ai">OpenRouter</a> + Hacker News + RSS · <a href="https://github.com/w1977-0/ai-radar">GitHub</a></div>
+</header>
+<h2>Pricing · 价格</h2>
+<div class="meta">20 models, selected from 380+ OpenRouter models, grouped by output price tier.</div>
+<h3>Tier S — Super-flagship <span style='color:#888;font-weight:400;font-size:0.85rem'>(&gt;$30/M output)</span></h3>
+<table>
+<thead><tr><th>Model</th><th>Company</th><th>Context</th><th class='price'>Input $/1M</th><th class='price'>Output $/1M</th></tr></thead>
+<tbody>
+<tr class='tier-S'><td class='id'>sakana/fugu-ultra</td><td>sakana</td><td>1000K</td><td class='price'>$5.00</td><td class='price'>$30.00</td></tr>
+<tr class='tier-S'><td class='id'>openai/gpt-chat-latest</td><td>openai</td><td>400K</td><td class='price'>$5.00</td><td class='price'>$30.00</td></tr>
+<tr class='tier-S'><td class='id'>openai/gpt-5.5</td><td>openai</td><td>1050K</td><td class='price'>$5.00</td><td class='price'>$30.00</td></tr>
+<tr class='tier-S'><td class='id'>anthropic/claude-opus-4.1:batch</td><td>anthropic</td><td>200K</td><td class='price'>$7.50</td><td class='price'>$37.50</td></tr>
+</tbody></table>
+<h3>Tier A — Flagship <span style='color:#888;font-weight:400;font-size:0.85rem'>($10-30/M output)</span></h3>
+<table>
+<thead><tr><th>Model</th><th>Company</th><th>Context</th><th class='price'>Input $/1M</th><th class='price'>Output $/1M</th></tr></thead>
+<tbody>
+<tr class='tier-A'><td class='id'>google/gemini-2.5-pro</td><td>google</td><td>1048K</td><td class='price'>$1.25</td><td class='price'>$10.00</td></tr>
+<tr class='tier-A'><td class='id'>google/gemini-2.5-pro-preview</td><td>google</td><td>1048K</td><td class='price'>$1.25</td><td class='price'>$10.00</td></tr>
+<tr class='tier-A'><td class='id'>anthropic/claude-sonnet-5</td><td>anthropic</td><td>1000K</td><td class='price'>$2.00</td><td class='price'>$10.00</td></tr>
+<tr class='tier-A'><td class='id'>~anthropic/claude-sonnet-latest</td><td>~anthropic</td><td>1000K</td><td class='price'>$2.00</td><td class='price'>$10.00</td></tr>
+<tr class='tier-A'><td class='id'>~openai/gpt-latest</td><td>~openai</td><td>1050K</td><td class='price'>$2.00</td><td class='price'>$10.00</td></tr>
+<tr class='tier-A'><td class='id'>~google/gemini-pro-latest</td><td>~google</td><td>1048K</td><td class='price'>$2.00</td><td class='price'>$12.00</td></tr>
+</tbody></table>
+<h3>Tier B — Mainstream <span style='color:#888;font-weight:400;font-size:0.85rem'>($1-10/M output)</span></h3>
+<table>
+<thead><tr><th>Model</th><th>Company</th><th>Context</th><th class='price'>Input $/1M</th><th class='price'>Output $/1M</th></tr></thead>
+<tbody>
+<tr class='tier-B'><td class='id'>nex-agi/nex-n2-pro</td><td>nex-agi</td><td>262K</td><td class='price'>$0.250</td><td class='price'>$1.00</td></tr>
+<tr class='tier-B'><td class='id'>qwen/qwen3-next-80b-a3b-instruct</td><td>qwen</td><td>262K</td><td class='price'>$0.100</td><td class='price'>$1.10</td></tr>
+<tr class='tier-B'><td class='id'>minimax/minimax-01</td><td>minimax</td><td>1000K</td><td class='price'>$0.200</td><td class='price'>$1.10</td></tr>
+<tr class='tier-B'><td class='id'>stepfun/step-3.7-flash</td><td>stepfun</td><td>262K</td><td class='price'>$0.200</td><td class='price'>$1.15</td></tr>
+<tr class='tier-B'><td class='id'>qwen/qwen3-next-80b-a3b-thinking</td><td>qwen</td><td>262K</td><td class='price'>$0.150</td><td class='price'>$1.20</td></tr>
+<tr class='tier-B'><td class='id'>perceptron/perceptron-mk1</td><td>perceptron</td><td>32K</td><td class='price'>$0.150</td><td class='price'>$1.50</td></tr>
+</tbody></table>
+<h3>Tier C — Economy <span style='color:#888;font-weight:400;font-size:0.85rem'>(&lt;$1/M output)</span></h3>
+<table>
+<thead><tr><th>Model</th><th>Company</th><th>Context</th><th class='price'>Input $/1M</th><th class='price'>Output $/1M</th></tr></thead>
+<tbody>
+<tr class='tier-C'><td class='id'>mistralai/mistral-nemo</td><td>mistralai</td><td>131K</td><td class='price'>$0.019</td><td class='price'>$0.030</td></tr>
+<tr class='tier-C'><td class='id'>inclusionai/ling-3.0-flash</td><td>inclusionai</td><td>262K</td><td class='price'>$0.021</td><td class='price'>$0.063</td></tr>
+<tr class='tier-C'><td class='id'>nex-agi/nex-n2-mini</td><td>nex-agi</td><td>262K</td><td class='price'>$0.025</td><td class='price'>$0.100</td></tr>
+<tr class='tier-C'><td class='id'>ibm-granite/granite-4.0-h-micro</td><td>ibm-granite</td><td>131K</td><td class='price'>$0.017</td><td class='price'>$0.112</td></tr>
+</tbody></table>
+<h2>News · 新闻</h2>
+<div class="meta">Top stories per company, last 7 days. Official = also in company RSS feed. Community = HN only.</div>
+<div class="news-grid">
+<div class="news-card">
+<div class="company">OpenAI</div>
+<h4><a href='https://news.ycombinator.com/item?id=49421074' target='_blank' rel='noopener'>OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 337 · 💬 342</div>
+<span class='source source-community'>community</span>
+<h4><a href='https://news.ycombinator.com/item?id=49432879' target='_blank' rel='noopener'>OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 119 · 💬 122</div>
+<span class='source source-community'>community</span>
+<h4><a href='https://news.ycombinator.com/item?id=49396590' target='_blank' rel='noopener'>GPT 5.6 Sol 20% price reduction</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 94 · 💬 78</div>
+<span class='source source-community'>community</span>
+</div>
+<div class="news-card">
+<div class="company">Anthropic</div>
+<h4><a href='https://news.ycombinator.com/item?id=49411102' target='_blank' rel='noopener'>Anthropic&#x27;s best AI model struggles to attract users as cheaper tools thrive</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 816 · 💬 700</div>
+<span class='source source-community'>community</span>
+<h4><a href='https://news.ycombinator.com/item?id=49410097' target='_blank' rel='noopener'>GLM-5.3 (open-weight) beat Anthropic/OpenAI models – for 1/5 the cost</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 239 · 💬 111</div>
+<span class='source source-community'>community</span>
+<h4><a href='https://news.ycombinator.com/item?id=49401549' target='_blank' rel='noopener'>Anthropic appears to be A/B testing reduced effort levels in Claude Code</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 216 · 💬 190</div>
+<span class='source source-community'>community</span>
+</div>
+<div class="news-card">
+<div class="company">Google (Gemini/DeepMind)</div>
+<h4><a href='https://news.ycombinator.com/item?id=49467922' target='_blank' rel='noopener'>Gemini Omni 1.1 Flash</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 199 · 💬 147</div>
+<span class='source source-community'>community</span>
+<h4><a href='https://news.ycombinator.com/item?id=49468818' target='_blank' rel='noopener'>Gemini-3.5-Transcribe</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 169 · 💬 48</div>
+<span class='source source-community'>community</span>
+</div>
+<div class="news-card">
+<div class="company">xAI</div>
+<h4><a href='https://news.ycombinator.com/item?id=49386895' target='_blank' rel='noopener'>Felony charges for citizen deleting phone data at US Border</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 1105 · 💬 1380</div>
+<span class='source source-community'>community</span>
+<h4><a href='https://news.ycombinator.com/item?id=49437946' target='_blank' rel='noopener'>Firefox 157 will include JPEG XL by default on all platforms</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 438 · 💬 137</div>
+<span class='source source-community'>community</span>
+<h4><a href='https://news.ycombinator.com/item?id=49418675' target='_blank' rel='noopener'>Ask HN: Why do corporate failures always seem to punish the wrong people?</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 121 · 💬 124</div>
+<span class='source source-community'>community</span>
+</div>
+<div class="news-card">
+<div class="company">DeepSeek</div>
+<h4><a href='https://news.ycombinator.com/item?id=49386163' target='_blank' rel='noopener'>DeepSeek-v4-flash-vision-exp</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 498 · 💬 155</div>
+<span class='source source-community'>community</span>
+<h4><a href='https://news.ycombinator.com/item?id=49446422' target='_blank' rel='noopener'>Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights</a></h4>
+<div style='color:#888;font-size:0.75rem'>↑ 430 · 💬 146</div>
+<span class='source source-community'>community</span>
+</div>
+<div class="news-card">
+<div class="company">Mistral AI</div>
+<div class="empty">No stories in window.</div>
+</div>
+<div class="news-card">
+<div class="company">Meta (Llama)</div>
+<div class="empty">No stories in window.</div>
+</div>
+<div class="news-card">
+<div class="company">Alibaba (Qwen)</div>
+<div class="empty">No stories in window.</div>
+</div>
+<div class="news-card">
+<div class="company">Zhipu (GLM)</div>
+<div class="empty">No stories in window.</div>
+</div>
+<div class="news-card">
+<div class="company">Moonshot (Kimi)</div>
+<div class="empty">No stories in window.</div>
+</div>
+<div class="news-card">
+<div class="company">MiniMax</div>
+<div class="empty">No stories in window.</div>
+</div>
+<div class="news-card">
+<div class="company">Stepfun</div>
+<div class="empty">No stories in window.</div>
+</div>
+</div>
+<h2>Recent changes · 近期价格变化</h2>
+<table>
+<thead><tr><th>Time</th><th>Model</th><th>Kind</th><th class='price'>Old $/M</th><th class='price'>New $/M</th><th class='price'>Δ%</th></tr></thead>
+<tbody>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>google/gemini-2.5-pro-preview</td><td>added</td><td class='price'>free</td><td class='price'>$10.00</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>anthropic/claude-sonnet-5</td><td>added</td><td class='price'>free</td><td class='price'>$10.00</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>~google/gemini-pro-latest</td><td>added</td><td class='price'>free</td><td class='price'>$12.00</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>~anthropic/claude-sonnet-latest</td><td>added</td><td class='price'>free</td><td class='price'>$10.00</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>~openai/gpt-latest</td><td>added</td><td class='price'>free</td><td class='price'>$10.00</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>qwen/qwen3-next-80b-a3b-instruct</td><td>added</td><td class='price'>free</td><td class='price'>$1.10</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>perceptron/perceptron-mk1</td><td>added</td><td class='price'>free</td><td class='price'>$1.50</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>qwen/qwen3-next-80b-a3b-thinking</td><td>added</td><td class='price'>free</td><td class='price'>$1.20</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>stepfun/step-3.7-flash</td><td>added</td><td class='price'>free</td><td class='price'>$1.15</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>minimax/minimax-01</td><td>added</td><td class='price'>free</td><td class='price'>$1.10</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>nex-agi/nex-n2-pro</td><td>added</td><td class='price'>free</td><td class='price'>$1.00</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>ibm-granite/granite-4.0-h-micro</td><td>added</td><td class='price'>free</td><td class='price'>$0.112</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>mistralai/mistral-nemo</td><td>added</td><td class='price'>free</td><td class='price'>$0.030</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>inclusionai/ling-3.0-flash</td><td>added</td><td class='price'>free</td><td class='price'>$0.063</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:23:45</td><td class='id'>nex-agi/nex-n2-mini</td><td>added</td><td class='price'>free</td><td class='price'>$0.100</td><td class='price'>—</td></tr>
+</tbody></table>
+<div class="footer">
+Data sources: <a href="https://openrouter.ai">OpenRouter</a> (pricing) · <a href="https://hn.algolia.com/api">HN Algolia</a> (community) · Company RSS feeds (official).
+<br>Generated by <a href="https://github.com/w1977-0/ai-radar">w1977-0/ai-radar</a>.
+</div>
+</div></body></html>

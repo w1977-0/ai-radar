@@ -1,0 +1,84 @@
+{
+  "selected": [
+    {
+      "id": "sakana/fugu-ultra",
+      "tier": "S"
+    },
+    {
+      "id": "openai/gpt-chat-latest",
+      "tier": "S"
+    },
+    {
+      "id": "openai/gpt-5.5",
+      "tier": "S"
+    },
+    {
+      "id": "anthropic/claude-opus-4.1:batch",
+      "tier": "S"
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "tier": "A"
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview",
+      "tier": "A"
+    },
+    {
+      "id": "anthropic/claude-sonnet-5",
+      "tier": "A"
+    },
+    {
+      "id": "~google/gemini-pro-latest",
+      "tier": "A"
+    },
+    {
+      "id": "~anthropic/claude-sonnet-latest",
+      "tier": "A"
+    },
+    {
+      "id": "~openai/gpt-latest",
+      "tier": "A"
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "tier": "B"
+    },
+    {
+      "id": "perceptron/perceptron-mk1",
+      "tier": "B"
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "tier": "B"
+    },
+    {
+      "id": "stepfun/step-3.7-flash",
+      "tier": "B"
+    },
+    {
+      "id": "minimax/minimax-01",
+      "tier": "B"
+    },
+    {
+      "id": "nex-agi/nex-n2-pro",
+      "tier": "B"
+    },
+    {
+      "id": "ibm-granite/granite-4.0-h-micro",
+      "tier": "C"
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "tier": "C"
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash",
+      "tier": "C"
+    },
+    {
+      "id": "nex-agi/nex-n2-mini",
+      "tier": "C"
+    }
+  ]
+}

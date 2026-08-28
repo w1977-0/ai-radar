@@ -1,0 +1,311 @@
+{
+  "generated_at": "2026-08-28T03:23:45.176906+00:00",
+  "source": "OpenRouter /api/v1/models",
+  "tier_bands_usd_per_million_output": {
+    "S": [
+      30.0,
+      Infinity
+    ],
+    "A": [
+      10.0,
+      30.0
+    ],
+    "B": [
+      1.0,
+      10.0
+    ],
+    "C": [
+      0.0,
+      1.0
+    ]
+  },
+  "tier_quotas": {
+    "S": 4,
+    "A": 6,
+    "B": 6,
+    "C": 4
+  },
+  "max_per_company": 2,
+  "models": [
+    {
+      "id": "sakana/fugu-ultra",
+      "name": "Sakana: Fugu Ultra",
+      "company": "sakana",
+      "tier": "S",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt_per_million": 5.0,
+        "completion_per_million": 30.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "openai/gpt-chat-latest",
+      "name": "OpenAI: GPT Chat Latest",
+      "company": "openai",
+      "tier": "S",
+      "context_length": 400000,
+      "pricing": {
+        "prompt_per_million": 5.0,
+        "completion_per_million": 30.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "openai/gpt-5.5",
+      "name": "OpenAI: GPT-5.5",
+      "company": "openai",
+      "tier": "S",
+      "context_length": 1050000,
+      "pricing": {
+        "prompt_per_million": 5.0,
+        "completion_per_million": 30.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "anthropic/claude-opus-4.1:batch",
+      "name": "Anthropic: Claude Opus 4.1 (batch)",
+      "company": "anthropic",
+      "tier": "S",
+      "context_length": 200000,
+      "pricing": {
+        "prompt_per_million": 7.5,
+        "completion_per_million": 37.5,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "name": "Google: Gemini 2.5 Pro",
+      "company": "google",
+      "tier": "A",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt_per_million": 1.25,
+        "completion_per_million": 10.0,
+        "request": 0,
+        "image": 1.25e-06
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview",
+      "name": "Google: Gemini 2.5 Pro Preview 06-05",
+      "company": "google",
+      "tier": "A",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt_per_million": 1.25,
+        "completion_per_million": 10.0,
+        "request": 0,
+        "image": 1.25e-06
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "anthropic/claude-sonnet-5",
+      "name": "Anthropic: Claude Sonnet 5",
+      "company": "anthropic",
+      "tier": "A",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt_per_million": 2.0,
+        "completion_per_million": 10.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "~google/gemini-pro-latest",
+      "name": "Google Gemini Pro Latest",
+      "company": "~google",
+      "tier": "A",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt_per_million": 2.0,
+        "completion_per_million": 12.0,
+        "request": 0,
+        "image": 2e-06
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "~anthropic/claude-sonnet-latest",
+      "name": "Anthropic Claude Sonnet Latest",
+      "company": "~anthropic",
+      "tier": "A",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt_per_million": 2.0,
+        "completion_per_million": 10.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "~openai/gpt-latest",
+      "name": "OpenAI GPT Latest",
+      "company": "~openai",
+      "tier": "A",
+      "context_length": 1050000,
+      "pricing": {
+        "prompt_per_million": 2.0,
+        "completion_per_million": 10.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+      "company": "qwen",
+      "tier": "B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt_per_million": 0.09999999999999999,
+        "completion_per_million": 1.1,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "perceptron/perceptron-mk1",
+      "name": "Perceptron: Perceptron Mk1",
+      "company": "perceptron",
+      "tier": "B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt_per_million": 0.15,
+        "completion_per_million": 1.5,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "name": "Qwen: Qwen3 Next 80B A3B Thinking",
+      "company": "qwen",
+      "tier": "B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt_per_million": 0.15,
+        "completion_per_million": 1.2,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "stepfun/step-3.7-flash",
+      "name": "StepFun: Step 3.7 Flash",
+      "company": "stepfun",
+      "tier": "B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt_per_million": 0.19999999999999998,
+        "completion_per_million": 1.15,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "minimax/minimax-01",
+      "name": "MiniMax: MiniMax-01",
+      "company": "minimax",
+      "tier": "B",
+      "context_length": 1000192,
+      "pricing": {
+        "prompt_per_million": 0.19999999999999998,
+        "completion_per_million": 1.1,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "nex-agi/nex-n2-pro",
+      "name": "Nex AGI: Nex-N2-Pro",
+      "company": "nex-agi",
+      "tier": "B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt_per_million": 0.25,
+        "completion_per_million": 1.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "ibm-granite/granite-4.0-h-micro",
+      "name": "IBM: Granite 4.0 Micro",
+      "company": "ibm-granite",
+      "tier": "C",
+      "context_length": 131000,
+      "pricing": {
+        "prompt_per_million": 0.017,
+        "completion_per_million": 0.112,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "name": "Mistral: Mistral Nemo",
+      "company": "mistralai",
+      "tier": "C",
+      "context_length": 131072,
+      "pricing": {
+        "prompt_per_million": 0.019000000000000003,
+        "completion_per_million": 0.03,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash",
+      "name": "Ling-3.0-flash",
+      "company": "inclusionai",
+      "tier": "C",
+      "context_length": 262144,
+      "pricing": {
+        "prompt_per_million": 0.020999999999999998,
+        "completion_per_million": 0.063,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "nex-agi/nex-n2-mini",
+      "name": "Nex AGI: Nex-N2-Mini",
+      "company": "nex-agi",
+      "tier": "C",
+      "context_length": 262144,
+      "pricing": {
+        "prompt_per_million": 0.024999999999999998,
+        "completion_per_million": 0.09999999999999999,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    }
+  ]
+}
