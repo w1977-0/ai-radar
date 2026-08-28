@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T04:18:33.952821+00:00",
+  "generated_at": "2026-08-28T07:00:31.010448+00:00",
   "hn_window_days": 7,
   "min_hn_points": 30,
   "min_hn_comments": 5,
@@ -7,13 +7,13 @@
   "companies": {
     "openai": {
       "name": "OpenAI",
-      "rss_url": "https://openai.com/blog/rss.xml",
+      "rss_url": "https://openai.com/news/rss.xml",
       "stories": [
         {
           "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
           "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
           "hn_url": "https://news.ycombinator.com/item?id=49434378",
-          "points": 582,
+          "points": 583,
           "num_comments": 377,
           "created_at": "2026-08-25T14:06:02Z",
           "author": "bmulholland",
@@ -23,8 +23,8 @@
           "title": "Tell HN: PayPal blocks GrapheneOS",
           "url": "https://news.ycombinator.com/item?id=49462253",
           "hn_url": "https://news.ycombinator.com/item?id=49462253",
-          "points": 467,
-          "num_comments": 283,
+          "points": 476,
+          "num_comments": 305,
           "created_at": "2026-08-27T09:56:54Z",
           "author": "leumon",
           "source": "community"
@@ -33,7 +33,7 @@
           "title": "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
           "url": "https://developers.openai.com/api/docs/pricing",
           "hn_url": "https://news.ycombinator.com/item?id=49421074",
-          "points": 337,
+          "points": 338,
           "num_comments": 342,
           "created_at": "2026-08-24T15:22:43Z",
           "author": "tosh",
@@ -43,7 +43,7 @@
     },
     "anthropic": {
       "name": "Anthropic",
-      "rss_url": "https://www.anthropic.com/news/rss.xml",
+      "rss_url": "https://openrss.org/www.anthropic.com/news",
       "stories": [
         {
           "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
@@ -56,92 +56,92 @@
           "source": "community"
         },
         {
-          "title": "GLM-5.3 (open-weight) beat Anthropic/OpenAI models – for 1/5 the cost",
-          "url": "https://reinvently.co.uk/tools/ed-o-meter/",
-          "hn_url": "https://news.ycombinator.com/item?id=49410097",
-          "points": 239,
-          "num_comments": 111,
-          "created_at": "2026-08-23T16:24:21Z",
-          "author": "ed-is-ai",
+          "title": "Show HN: The load-bearing vocabulary of Claude",
+          "url": "https://louisabraham.github.io/load-bearing/",
+          "hn_url": "https://news.ycombinator.com/item?id=49461817",
+          "points": 445,
+          "num_comments": 213,
+          "created_at": "2026-08-27T08:59:49Z",
+          "author": "Labo333",
           "source": "community"
         },
         {
-          "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
-          "url": "https://twitter.com/argofowl/status/2091150597374537729",
-          "hn_url": "https://news.ycombinator.com/item?id=49401549",
-          "points": 216,
-          "num_comments": 190,
-          "created_at": "2026-08-22T16:58:49Z",
-          "author": "matthieu_bl",
+          "title": "Claudette: Make Claude stop talking like a BuzzFeed article",
+          "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+          "hn_url": "https://news.ycombinator.com/item?id=49388752",
+          "points": 361,
+          "num_comments": 237,
+          "created_at": "2026-08-21T14:31:52Z",
+          "author": "aakil",
           "source": "community"
         }
       ]
     },
     "google": {
       "name": "Google (Gemini/DeepMind)",
-      "rss_url": "https://blog.google/technology/ai/rss/",
+      "rss_url": "https://blog.google/products/gemini/rss/",
       "stories": [
-        {
-          "title": "Gemini Omni 1.1 Flash",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
-          "hn_url": "https://news.ycombinator.com/item?id=49467922",
-          "points": 204,
-          "num_comments": 148,
-          "created_at": "2026-08-27T17:06:32Z",
-          "author": "saretup",
-          "source": "community"
-        },
         {
           "title": "Gemini-3.5-Transcribe",
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
           "hn_url": "https://news.ycombinator.com/item?id=49468818",
-          "points": 187,
-          "num_comments": 52,
+          "points": 242,
+          "num_comments": 72,
           "created_at": "2026-08-27T18:03:42Z",
           "author": "k9294",
           "source": "community"
+        },
+        {
+          "title": "Gemini Omni 1.1 Flash",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+          "hn_url": "https://news.ycombinator.com/item?id=49467922",
+          "points": 225,
+          "num_comments": 159,
+          "created_at": "2026-08-27T17:06:32Z",
+          "author": "saretup",
+          "source": "official"
         }
       ]
     },
     "xai": {
       "name": "xAI",
-      "rss_url": "https://x.ai/blog/rss.xml",
+      "rss_url": "https://openrss.org/x.ai/news",
       "stories": [
+        {
+          "title": "Felony charges for citizen deleting phone data at US Border",
+          "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
+          "hn_url": "https://news.ycombinator.com/item?id=49386895",
+          "points": 1105,
+          "num_comments": 1380,
+          "created_at": "2026-08-21T12:10:13Z",
+          "author": "floathub",
+          "source": "community"
+        },
         {
           "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
           "url": "https://github.com/SenteLabsAI/OpenExecutive",
           "hn_url": "https://news.ycombinator.com/item?id=49458418",
-          "points": 950,
-          "num_comments": 652,
+          "points": 962,
+          "num_comments": 658,
           "created_at": "2026-08-27T01:46:22Z",
           "author": "GrumpySciGuy",
           "source": "community"
         },
         {
-          "title": "Gemini Omni 1.1 Flash",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
-          "hn_url": "https://news.ycombinator.com/item?id=49467922",
-          "points": 204,
-          "num_comments": 148,
-          "created_at": "2026-08-27T17:06:32Z",
-          "author": "saretup",
-          "source": "community"
-        },
-        {
-          "title": "Gemini-3.5-Transcribe",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
-          "hn_url": "https://news.ycombinator.com/item?id=49468818",
-          "points": 187,
-          "num_comments": 52,
-          "created_at": "2026-08-27T18:03:42Z",
-          "author": "k9294",
+          "title": "Firefox 157 will include JPEG XL by default on all platforms",
+          "url": "https://groups.google.com/a/mozilla.org/g/dev-platform/c/3YMV4MS34KA?pli=1",
+          "hn_url": "https://news.ycombinator.com/item?id=49437946",
+          "points": 439,
+          "num_comments": 137,
+          "created_at": "2026-08-25T17:55:23Z",
+          "author": "yboris",
           "source": "community"
         }
       ]
     },
     "deepseek": {
       "name": "DeepSeek",
-      "rss_url": "https://api-docs.deepseek.com/news.rss",
+      "rss_url": "",
       "stories": [
         {
           "title": "DeepSeek-v4-flash-vision-exp",
@@ -157,7 +157,7 @@
           "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
           "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
           "hn_url": "https://news.ycombinator.com/item?id=49446422",
-          "points": 430,
+          "points": 432,
           "num_comments": 146,
           "created_at": "2026-08-26T10:04:55Z",
           "author": "garo-pro",
@@ -167,38 +167,292 @@
     },
     "mistral": {
       "name": "Mistral AI",
-      "rss_url": "https://mistral.ai/news/rss.xml",
+      "rss_url": "https://mistral.ai/news/rss",
       "stories": []
     },
     "meta": {
       "name": "Meta (Llama)",
-      "rss_url": "https://ai.meta.com/blog/rss/",
+      "rss_url": "https://openrss.org/www.meta.com/blog",
       "stories": []
     },
     "alibaba": {
       "name": "Alibaba (Qwen)",
-      "rss_url": "https://qwenlm.github.io/feed.xml",
-      "stories": []
+      "rss_url": "",
+      "stories": [
+        {
+          "title": "Qwen3.8-Flash-Next",
+          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+          "hn_url": "https://news.ycombinator.com/item?id=49448210",
+          "points": 692,
+          "num_comments": 232,
+          "created_at": "2026-08-26T12:52:12Z",
+          "author": "tosh",
+          "source": "community"
+        },
+        {
+          "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
+          "url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/",
+          "hn_url": "https://news.ycombinator.com/item?id=49407507",
+          "points": 368,
+          "num_comments": 152,
+          "created_at": "2026-08-23T10:02:51Z",
+          "author": "raybb",
+          "source": "community"
+        },
+        {
+          "title": "Qwen 3.8-Flash-Next releasing tomorrow (125B a6B)",
+          "url": "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
+          "hn_url": "https://news.ycombinator.com/item?id=49432317",
+          "points": 334,
+          "num_comments": 168,
+          "created_at": "2026-08-25T11:49:43Z",
+          "author": "garo-pro",
+          "source": "community"
+        }
+      ]
+    },
+    "qwen": {
+      "name": "Qwen",
+      "rss_url": "https://openrss.org/qwenlm.github.io",
+      "stories": [
+        {
+          "title": "Qwen3.8-Flash-Next",
+          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+          "hn_url": "https://news.ycombinator.com/item?id=49448210",
+          "points": 692,
+          "num_comments": 232,
+          "created_at": "2026-08-26T12:52:12Z",
+          "author": "tosh",
+          "source": "community"
+        },
+        {
+          "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
+          "url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/",
+          "hn_url": "https://news.ycombinator.com/item?id=49407507",
+          "points": 368,
+          "num_comments": 152,
+          "created_at": "2026-08-23T10:02:51Z",
+          "author": "raybb",
+          "source": "community"
+        },
+        {
+          "title": "Qwen 3.8-Flash-Next releasing tomorrow (125B a6B)",
+          "url": "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
+          "hn_url": "https://news.ycombinator.com/item?id=49432317",
+          "points": 334,
+          "num_comments": 168,
+          "created_at": "2026-08-25T11:49:43Z",
+          "author": "garo-pro",
+          "source": "community"
+        }
+      ]
     },
     "zhipu": {
       "name": "Zhipu (GLM)",
       "rss_url": "",
-      "stories": []
+      "stories": [
+        {
+          "title": "GLM-5.3-Flash",
+          "url": "https://z.ai/blog/glm-5.3-flash",
+          "hn_url": "https://news.ycombinator.com/item?id=49449507",
+          "points": 1107,
+          "num_comments": 557,
+          "created_at": "2026-08-26T14:08:50Z",
+          "author": "Philpax",
+          "source": "community"
+        },
+        {
+          "title": "The entire city of San Francisco as a video game",
+          "url": "https://sf.thijs.gg/",
+          "hn_url": "https://news.ycombinator.com/item?id=49422784",
+          "points": 607,
+          "num_comments": 171,
+          "created_at": "2026-08-24T17:05:38Z",
+          "author": "centrosphere",
+          "source": "community"
+        },
+        {
+          "title": "I were 17, I'd learn how to build LLMs from scratch",
+          "url": "https://twitter.com/paulg/status/2091544343589060625",
+          "hn_url": "https://news.ycombinator.com/item?id=49412396",
+          "points": 605,
+          "num_comments": 681,
+          "created_at": "2026-08-23T20:38:09Z",
+          "author": "bilsbie",
+          "source": "community"
+        }
+      ]
     },
-    "moonshot": {
+    "moonshotai": {
       "name": "Moonshot (Kimi)",
       "rss_url": "",
-      "stories": []
+      "stories": [
+        {
+          "title": "Show HN: We built open OpenRouter that turns usage into a better model",
+          "url": "https://github.com/experientiallabs/experiential",
+          "hn_url": "https://news.ycombinator.com/item?id=49471407",
+          "points": 162,
+          "num_comments": 26,
+          "created_at": "2026-08-27T21:18:35Z",
+          "author": "SilenN",
+          "source": "community"
+        },
+        {
+          "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+          "url": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/",
+          "hn_url": "https://news.ycombinator.com/item?id=49432879",
+          "points": 119,
+          "num_comments": 122,
+          "created_at": "2026-08-25T12:33:00Z",
+          "author": "MC995",
+          "source": "community"
+        },
+        {
+          "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
+          "url": "https://ozbrain.com",
+          "hn_url": "https://news.ycombinator.com/item?id=49394827",
+          "points": 92,
+          "num_comments": 58,
+          "created_at": "2026-08-21T23:09:06Z",
+          "author": "dariusmonsef",
+          "source": "community"
+        }
+      ]
     },
     "minimax": {
       "name": "MiniMax",
       "rss_url": "",
-      "stories": []
+      "stories": [
+        {
+          "title": "Show HN: Yet another minimal and lightweight terminal multiplexer written in Go.",
+          "url": "https://github.com/patriceckhart/hrdx",
+          "hn_url": "https://news.ycombinator.com/item?id=49468507",
+          "points": 33,
+          "num_comments": 16,
+          "created_at": "2026-08-27T17:44:53Z",
+          "author": "patriceckhart",
+          "source": "community"
+        }
+      ]
     },
     "stepfun": {
       "name": "Stepfun",
       "rss_url": "",
+      "stories": [
+        {
+          "title": "Tim Curry has died",
+          "url": "https://www.theguardian.com/film/2026/aug/26/tim-curry-dies-rocky-horror-show-stephen-king-it-legend-film",
+          "hn_url": "https://news.ycombinator.com/item?id=49451448",
+          "points": 714,
+          "num_comments": 230,
+          "created_at": "2026-08-26T16:03:37Z",
+          "author": "mykowebhn",
+          "source": "community"
+        },
+        {
+          "title": "Who bears the risk in Nvidia's $500B financing platform?",
+          "url": "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk",
+          "hn_url": "https://news.ycombinator.com/item?id=49447878",
+          "points": 32,
+          "num_comments": 8,
+          "created_at": "2026-08-26T12:32:31Z",
+          "author": "rwmj",
+          "source": "community"
+        }
+      ]
+    },
+    "meta-llama": {
+      "name": "Meta/Llama",
+      "rss_url": "https://openrss.org/www.meta.com/blog",
       "stories": []
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "rss_url": "",
+      "stories": [
+        {
+          "title": "Nvidia agrees to acquire Hugging Face for $13B",
+          "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+          "hn_url": "https://news.ycombinator.com/item?id=49458161",
+          "points": 1878,
+          "num_comments": 867,
+          "created_at": "2026-08-27T01:12:55Z",
+          "author": "mfiguiere",
+          "source": "community"
+        },
+        {
+          "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+          "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+          "hn_url": "https://news.ycombinator.com/item?id=49434378",
+          "points": 583,
+          "num_comments": 377,
+          "created_at": "2026-08-25T14:06:02Z",
+          "author": "bmulholland",
+          "source": "community"
+        },
+        {
+          "title": "Nvidia projects $673B in sales as AI demand widens",
+          "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast/",
+          "hn_url": "https://news.ycombinator.com/item?id=49466052",
+          "points": 104,
+          "num_comments": 99,
+          "created_at": "2026-08-27T15:04:16Z",
+          "author": "kuuuzya",
+          "source": "community"
+        }
+      ]
+    },
+    "ibm-granite": {
+      "name": "IBM Granite",
+      "rss_url": "",
+      "stories": [
+        {
+          "title": "We must not grant AI agents legal personhood",
+          "url": "https://www.ft.com/content/b8cc4bf4-6d3c-4974-8428-9a091983c473",
+          "hn_url": "https://news.ycombinator.com/item?id=49410628",
+          "points": 62,
+          "num_comments": 113,
+          "created_at": "2026-08-23T17:25:03Z",
+          "author": "andsoitis",
+          "source": "community"
+        }
+      ]
+    },
+    "perplexity": {
+      "name": "Perplexity",
+      "rss_url": "",
+      "stories": [
+        {
+          "title": "Radiation damage to Hubble has been 4.3 years out of phase with the Solar cycle",
+          "url": "https://arxiv.org/abs/2608.18214",
+          "hn_url": "https://news.ycombinator.com/item?id=49387856",
+          "points": 112,
+          "num_comments": 36,
+          "created_at": "2026-08-21T13:35:17Z",
+          "author": "pppone",
+          "source": "community"
+        },
+        {
+          "title": "Yes/No/Cancel causes Aspirin sales to soar (2007)",
+          "url": "https://martin.kleppmann.com/2007/07/19/yes-no-cancel-causes-aspirin-sales-to-soar.html",
+          "hn_url": "https://news.ycombinator.com/item?id=49387433",
+          "points": 97,
+          "num_comments": 76,
+          "created_at": "2026-08-21T12:58:46Z",
+          "author": "ankitg12",
+          "source": "community"
+        },
+        {
+          "title": "Could we dredge the Netherlands without fossil fuels? (2018)",
+          "url": "https://solar.lowtechmagazine.com/2018/08/could-we-dredge-the-netherlands-without-fossil-fuels",
+          "hn_url": "https://news.ycombinator.com/item?id=49420861",
+          "points": 63,
+          "num_comments": 71,
+          "created_at": "2026-08-24T15:07:07Z",
+          "author": "at1as",
+          "source": "community"
+        }
+      ]
     }
   }
 }
