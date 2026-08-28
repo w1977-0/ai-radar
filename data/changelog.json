@@ -139,8 +139,113 @@
       "kind": "added",
       "old_price": null,
       "new_price": 0.09999999999999999
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "moonshotai/kimi-k3",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 15.0
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "perplexity/sonar-pro-search",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 15.0
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "perplexity/sonar-pro",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 15.0
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 1.0
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "minimax/minimax-m2",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 1.02
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "meta-llama/llama-3.2-1b-instruct",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 0.201
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "ibm-granite/granite-4.1-8b",
+      "kind": "added",
+      "old_price": null,
+      "new_price": 0.09999999999999999
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "sakana/fugu-ultra",
+      "kind": "removed",
+      "old_price": 30.0,
+      "new_price": null
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "~google/gemini-pro-latest",
+      "kind": "removed",
+      "old_price": 12.0,
+      "new_price": null
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "~anthropic/claude-sonnet-latest",
+      "kind": "removed",
+      "old_price": 10.0,
+      "new_price": null
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "~openai/gpt-latest",
+      "kind": "removed",
+      "old_price": 10.0,
+      "new_price": null
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "perceptron/perceptron-mk1",
+      "kind": "removed",
+      "old_price": 1.5,
+      "new_price": null
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "nex-agi/nex-n2-pro",
+      "kind": "removed",
+      "old_price": 1.0,
+      "new_price": null
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "inclusionai/ling-3.0-flash",
+      "kind": "removed",
+      "old_price": 0.063,
+      "new_price": null
+    },
+    {
+      "timestamp": "2026-08-28T03:33:58.579894+00:00",
+      "model": "nex-agi/nex-n2-mini",
+      "kind": "removed",
+      "old_price": 0.09999999999999999,
+      "new_price": null
     }
   ],
-  "last_run": "2026-08-28T03:23:45.176906+00:00",
-  "total_changes_tracked": 20
+  "last_run": "2026-08-28T03:33:58.579894+00:00",
+  "total_changes_tracked": 35
 }

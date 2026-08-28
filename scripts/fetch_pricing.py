@@ -51,21 +51,54 @@ TIER_QUOTAS = {"S": 4, "A": 6, "B": 6, "C": 4}
 MAX_PER_COMPANY = 2
 TOTAL_QUOTA = 20
 
+# Curated whitelist of major AI model companies. Models from outside this list
+# (smaller vendors, research labs, preview/beta suffixes) are filtered out.
+COMPANY_WHITELIST = {
+    # US frontier
+    "openai", "anthropic", "google", "xai",
+    # Independent model vendors
+    "deepseek", "mistralai",
+    # China
+    "alibaba", "qwen", "zhipu", "moonshotai", "minimax", "stepfun",
+    # Meta / open-weight
+    "meta-llama",
+    # Other notable
+    "nvidia", "ibm-granite", "perplexity",
+}
+
 
 def fetch_models() -> list[dict]:
+    """Fetch all models from OpenRouter. Uses curl (more reliable than Python 3.14
+    urllib against large chunked responses) and falls back to urllib on failure."""
+    import subprocess
+    import tempfile
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tmp:
+        tmp_path = tmp.name
+    try:
+        r = subprocess.run(
+            ["curl", "-sSL", "--max-time", "60", "-o", tmp_path, OPENROUTER_URL],
+            capture_output=True, text=True, timeout=70
+        )
+        if r.returncode == 0:
+            with open(tmp_path) as f:
+                data = json.load(f)
+            return data.get("data", [])
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+    # Fallback to urllib
     req = urllib.request.Request(
         OPENROUTER_URL,
         headers={"User-Agent": "ai-radar/1.0", "Accept": "application/json"},
     )
     with urllib.request.urlopen(req, timeout=30, context=_SSL_CTX) as resp:
-        # Read all chunks to avoid IncompleteRead on chunked transfer
-        chunks = []
-        while True:
-            chunk = resp.read(65536)
-            if not chunk:
-                break
-            chunks.append(chunk)
-        body = b"".join(chunks)
+        cl = resp.headers.get("Content-Length")
+        if cl:
+            body = resp.read(int(cl))
+        else:
+            body = resp.read()
     data = json.loads(body)
     return data.get("data", [])
 
@@ -94,9 +127,22 @@ def tier_of(pricing: dict) -> str | None:
 
 
 def filter_chat_models(models: list[dict]) -> list[dict]:
-    """Keep only chat-capable models with non-zero prompt+completion pricing."""
+    """Keep only chat-capable models with non-zero prompt+completion pricing,
+    from the company whitelist, and without preview/beta suffixes."""
     out = []
     for m in models:
+        mid = m.get("id", "")
+        # Skip preview/beta versions (prefixed with ~ in OpenRouter)
+        if mid.startswith("~"):
+            continue
+        # Skip non-chat categories
+        ml = mid.lower()
+        if any(kw in ml for kw in ["embed", "dall-e", "moderation", "guard", "whisper", "tts", "imagen", "sora"]):
+            continue
+        # Skip companies not in whitelist
+        company = extract_company(mid)
+        if company not in COMPANY_WHITELIST:
+            continue
         p = m.get("pricing") or {}
         try:
             prompt = float(p.get("prompt", "0"))
@@ -105,10 +151,6 @@ def filter_chat_models(models: list[dict]) -> list[dict]:
             continue
         if prompt <= 0 or completion <= 0:
             continue  # skip free models
-        # Skip image/embedding/moderation/guard
-        mid = m.get("id", "").lower()
-        if any(kw in mid for kw in ["embed", "dall-e", "moderation", "guard", "whisper", "tts", "imagen", "sora"]):
-            continue
         out.append(m)
     return out
 

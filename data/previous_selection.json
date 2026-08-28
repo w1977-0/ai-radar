@@ -1,10 +1,6 @@
 {
   "selected": [
     {
-      "id": "sakana/fugu-ultra",
-      "tier": "S"
-    },
-    {
       "id": "openai/gpt-chat-latest",
       "tier": "S"
     },
@@ -29,23 +25,7 @@
       "tier": "A"
     },
     {
-      "id": "~google/gemini-pro-latest",
-      "tier": "A"
-    },
-    {
-      "id": "~anthropic/claude-sonnet-latest",
-      "tier": "A"
-    },
-    {
-      "id": "~openai/gpt-latest",
-      "tier": "A"
-    },
-    {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
-      "tier": "B"
-    },
-    {
-      "id": "perceptron/perceptron-mk1",
       "tier": "B"
     },
     {
@@ -61,10 +41,6 @@
       "tier": "B"
     },
     {
-      "id": "nex-agi/nex-n2-pro",
-      "tier": "B"
-    },
-    {
       "id": "ibm-granite/granite-4.0-h-micro",
       "tier": "C"
     },
@@ -73,11 +49,31 @@
       "tier": "C"
     },
     {
-      "id": "inclusionai/ling-3.0-flash",
+      "id": "moonshotai/kimi-k3",
+      "tier": "A"
+    },
+    {
+      "id": "perplexity/sonar-pro-search",
+      "tier": "A"
+    },
+    {
+      "id": "perplexity/sonar-pro",
+      "tier": "A"
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "tier": "B"
+    },
+    {
+      "id": "minimax/minimax-m2",
+      "tier": "B"
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
       "tier": "C"
     },
     {
-      "id": "nex-agi/nex-n2-mini",
+      "id": "ibm-granite/granite-4.1-8b",
       "tier": "C"
     }
   ]

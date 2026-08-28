@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T03:23:45.176906+00:00",
+  "generated_at": "2026-08-28T03:33:58.579894+00:00",
   "source": "OpenRouter /api/v1/models",
   "tier_bands_usd_per_million_output": {
     "S": [
@@ -28,20 +28,6 @@
   "max_per_company": 2,
   "models": [
     {
-      "id": "sakana/fugu-ultra",
-      "name": "Sakana: Fugu Ultra",
-      "company": "sakana",
-      "tier": "S",
-      "context_length": 1000000,
-      "pricing": {
-        "prompt_per_million": 5.0,
-        "completion_per_million": 30.0,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
-    },
-    {
       "id": "openai/gpt-chat-latest",
       "name": "OpenAI: GPT Chat Latest",
       "company": "openai",
@@ -53,7 +39,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "openai/gpt-5.5",
@@ -67,7 +53,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "anthropic/claude-opus-4.1:batch",
@@ -81,7 +67,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "google/gemini-2.5-pro",
@@ -95,7 +81,7 @@
         "request": 0,
         "image": 1.25e-06
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "google/gemini-2.5-pro-preview",
@@ -109,7 +95,7 @@
         "request": 0,
         "image": 1.25e-06
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "anthropic/claude-sonnet-5",
@@ -123,49 +109,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
-    },
-    {
-      "id": "~google/gemini-pro-latest",
-      "name": "Google Gemini Pro Latest",
-      "company": "~google",
-      "tier": "A",
-      "context_length": 1048576,
-      "pricing": {
-        "prompt_per_million": 2.0,
-        "completion_per_million": 12.0,
-        "request": 0,
-        "image": 2e-06
-      },
-      "previously_selected": false
-    },
-    {
-      "id": "~anthropic/claude-sonnet-latest",
-      "name": "Anthropic Claude Sonnet Latest",
-      "company": "~anthropic",
-      "tier": "A",
-      "context_length": 1000000,
-      "pricing": {
-        "prompt_per_million": 2.0,
-        "completion_per_million": 10.0,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
-    },
-    {
-      "id": "~openai/gpt-latest",
-      "name": "OpenAI GPT Latest",
-      "company": "~openai",
-      "tier": "A",
-      "context_length": 1050000,
-      "pricing": {
-        "prompt_per_million": 2.0,
-        "completion_per_million": 10.0,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
@@ -179,21 +123,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
-    },
-    {
-      "id": "perceptron/perceptron-mk1",
-      "name": "Perceptron: Perceptron Mk1",
-      "company": "perceptron",
-      "tier": "B",
-      "context_length": 32768,
-      "pricing": {
-        "prompt_per_million": 0.15,
-        "completion_per_million": 1.5,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-thinking",
@@ -207,7 +137,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "stepfun/step-3.7-flash",
@@ -221,7 +151,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "minimax/minimax-01",
@@ -235,21 +165,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
-    },
-    {
-      "id": "nex-agi/nex-n2-pro",
-      "name": "Nex AGI: Nex-N2-Pro",
-      "company": "nex-agi",
-      "tier": "B",
-      "context_length": 262144,
-      "pricing": {
-        "prompt_per_million": 0.25,
-        "completion_per_million": 1.0,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "ibm-granite/granite-4.0-h-micro",
@@ -263,7 +179,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "mistralai/mistral-nemo",
@@ -277,30 +193,100 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
-      "id": "inclusionai/ling-3.0-flash",
-      "name": "Ling-3.0-flash",
-      "company": "inclusionai",
-      "tier": "C",
-      "context_length": 262144,
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "company": "moonshotai",
+      "tier": "A",
+      "context_length": 1048576,
       "pricing": {
-        "prompt_per_million": 0.020999999999999998,
-        "completion_per_million": 0.063,
+        "prompt_per_million": 3.0,
+        "completion_per_million": 15.0,
         "request": 0,
         "image": 0
       },
       "previously_selected": false
     },
     {
-      "id": "nex-agi/nex-n2-mini",
-      "name": "Nex AGI: Nex-N2-Mini",
-      "company": "nex-agi",
-      "tier": "C",
-      "context_length": 262144,
+      "id": "perplexity/sonar-pro-search",
+      "name": "Perplexity: Sonar Pro Search",
+      "company": "perplexity",
+      "tier": "A",
+      "context_length": 200000,
       "pricing": {
-        "prompt_per_million": 0.024999999999999998,
+        "prompt_per_million": 3.0,
+        "completion_per_million": 15.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "perplexity/sonar-pro",
+      "name": "Perplexity: Sonar Pro",
+      "company": "perplexity",
+      "tier": "A",
+      "context_length": 200000,
+      "pricing": {
+        "prompt_per_million": 3.0,
+        "completion_per_million": 15.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "name": "DeepSeek: DeepSeek V3 0324",
+      "company": "deepseek",
+      "tier": "B",
+      "context_length": 163840,
+      "pricing": {
+        "prompt_per_million": 0.25,
+        "completion_per_million": 1.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "minimax/minimax-m2",
+      "name": "MiniMax: MiniMax M2",
+      "company": "minimax",
+      "tier": "B",
+      "context_length": 204800,
+      "pricing": {
+        "prompt_per_million": 0.255,
+        "completion_per_million": 1.02,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "company": "meta-llama",
+      "tier": "C",
+      "context_length": 60000,
+      "pricing": {
+        "prompt_per_million": 0.027,
+        "completion_per_million": 0.201,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": false
+    },
+    {
+      "id": "ibm-granite/granite-4.1-8b",
+      "name": "IBM: Granite 4.1 8B",
+      "company": "ibm-granite",
+      "tier": "C",
+      "context_length": 131072,
+      "pricing": {
+        "prompt_per_million": 0.049999999999999996,
         "completion_per_million": 0.09999999999999999,
         "request": 0,
         "image": 0
