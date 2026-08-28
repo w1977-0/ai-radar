@@ -57,7 +57,7 @@ COMPANIES = [
      "https://openai.com/news/rss.xml"),
     ("anthropic", "Anthropic",
      ["anthropic", "claude"],
-     "https://openrss.org/www.anthropic.com/news"),
+     "https://rsshub.bestblogs.dev/anthropic/news"),
     ("google", "Google (Gemini/DeepMind)",
      ["google gemini", "deepmind"],
      "https://blog.google/products/gemini/rss/"),
@@ -213,24 +213,41 @@ def fetch_rss(url: str) -> list[dict]:
 def cross_validate(hn_stories: list[dict], rss_items: list[dict]) -> list[dict]:
     """Merge HN + RSS with cross-validation.
 
-    For each HN story, check if a similar title appears in any RSS item.
-    'similar' = first 30 normalized chars of title appear in the other.
+    A story is "official" if it has ≥2 significant tokens in common with
+    an RSS item. Tokens are 3+ letter words after removing common stopwords.
+    Handles substring/punctuation differences (e.g. "Transcribe" matches
+    "Transcribing") by using set intersection, not literal equality.
 
     Sources:
-    - 'official' = also in company RSS feed
+    - 'official' = matched an RSS feed (≥2 token overlap)
     - 'community' = HN only
     """
-    def norm(s: str) -> str:
-        return re.sub(r"\W+", "", s.lower())[:30]
+    STOPWORDS = {"the", "and", "for", "with", "from", "this", "that", "you",
+                 "are", "can", "all", "any", "but", "not", "out", "use",
+                 "now", "new", "one", "how", "why", "its", "may", "may"}
 
-    rss_norms = {norm(it["title"]) for it in rss_items if it.get("title")}
+    def tokens(s: str) -> set[str]:
+        words = re.findall(r'[a-z]{3,}', s.lower())
+        return {w for w in words if w not in STOPWORDS}
+
+    # Pre-compute RSS token sets
+    rss_token_sets = [tokens(it.get("title", "")) for it in rss_items if it.get("title")]
+    # Best matching RSS title for tooltip
+    rss_titles = [it.get("title", "") for it in rss_items if it.get("title")]
+
     out = []
     for hn in hn_stories:
-        hn_norm = norm(hn.get("title", ""))
-        is_official = any(
-            hn_norm in r_norm or r_norm in hn_norm
-            for r_norm in rss_norms
-        )
+        hn_toks = tokens(hn.get("title", ""))
+        is_official = False
+        best_match_title = ""
+        best_match_count = 0
+        for rss_toks, rss_title in zip(rss_token_sets, rss_titles):
+            overlap = len(hn_toks & rss_toks)
+            if overlap > best_match_count:
+                best_match_count = overlap
+                best_match_title = rss_title
+            if overlap >= 2:
+                is_official = True
         out.append({
             "title": hn["title"],
             "url": hn["url"],
@@ -240,6 +257,8 @@ def cross_validate(hn_stories: list[dict], rss_items: list[dict]) -> list[dict]:
             "created_at": hn["created_at"],
             "author": hn["author"],
             "source": "official" if is_official else "community",
+            "matched_rss": best_match_title if is_official else "",
+            "match_score": best_match_count if is_official else 0,
         })
     return out
 

@@ -241,6 +241,7 @@ table.data td.company { color: var(--text-muted); font-size: 12.5px; }
 .news-card .story .title a { color: var(--text); }
 .news-card .story .title a:hover { color: var(--accent); }
 .news-card .story .meta { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); }
+.news-card .story .match-info { color: var(--green); font-weight: 500; cursor: help; }
 .news-card .empty { font-size: 12px; color: var(--text-dim); font-style: italic; padding: 8px 0; }
 
 /* Changelog */
@@ -371,10 +372,15 @@ def render_news(news: dict) -> str:
                 title = s.get("title", "")
                 url = s.get("hn_url") or s.get("url", "#")
                 src = s.get("source", "community")
+                match_info = ""
+                if src == "official":
+                    matched = s.get("matched_rss", "")
+                    score = s.get("match_score", 0)
+                    match_info = f' <span class="match-info" title="{esc(matched)}">~{score} tok</span>'
                 pill = '<span class="pill pill-official">official</span>' if src == "official" else '<span class="pill pill-community">community</span>'
                 out.append('<div class="story">')
                 out.append(f'<div class="title"><a href="{esc(url)}" target="_blank" rel="noopener">{esc(title)}</a></div>')
-                out.append(f'<div class="meta">↑ {s.get("points",0)} · 💬 {s.get("num_comments",0)} &nbsp; {pill}</div>')
+                out.append(f'<div class="meta">↑ {s.get("points",0)} · 💬 {s.get("num_comments",0)} &nbsp; {pill}{match_info}</div>')
                 out.append('</div>')
         out.append('</div>')
     out.append('</div>')
