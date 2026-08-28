@@ -1,0 +1,12 @@
+# Cron runtime artifacts (not part of source)
+logs/
+.cron.lock
+.cron.lock/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local dev
+.DS_Store
+*.swp
