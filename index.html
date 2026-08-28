@@ -45,7 +45,7 @@
 <header>
 <h1>AI Radar</h1>
 <div class="tagline">Frontier model pricing &amp; AI company news — 20 models, 12 companies, cross-validated.</div>
-<div class="meta">Last run: 2026-08-28 03:33:58 UTC · Source: <a href="https://openrouter.ai">OpenRouter</a> + Hacker News + RSS · <a href="https://github.com/w1977-0/ai-radar">GitHub</a></div>
+<div class="meta">Last run: 2026-08-28 03:45:02 UTC · Source: <a href="https://openrouter.ai">OpenRouter</a> + Hacker News + RSS · <a href="https://github.com/w1977-0/ai-radar">GitHub</a></div>
 </header>
 <h2>Pricing · 价格</h2>
 <div class="meta">20 models, selected from 380+ OpenRouter models, grouped by output price tier.</div>
@@ -55,18 +55,18 @@
 <tbody>
 <tr class='tier-S'><td class='id'>openai/gpt-chat-latest</td><td>openai</td><td>400K</td><td class='price'>$5.00</td><td class='price'>$30.00</td></tr>
 <tr class='tier-S'><td class='id'>openai/gpt-5.5</td><td>openai</td><td>1050K</td><td class='price'>$5.00</td><td class='price'>$30.00</td></tr>
-<tr class='tier-S'><td class='id'>anthropic/claude-opus-4.1:batch</td><td>anthropic</td><td>200K</td><td class='price'>$7.50</td><td class='price'>$37.50</td></tr>
+<tr class='tier-S'><td class='id'>anthropic/claude-opus-4.7-fast</td><td>anthropic</td><td>1000K</td><td class='price'>$30.00</td><td class='price'>$150</td></tr>
 </tbody></table>
 <h3>Tier A — Flagship <span style='color:#888;font-weight:400;font-size:0.85rem'>($10-30/M output)</span></h3>
 <table>
 <thead><tr><th>Model</th><th>Company</th><th>Context</th><th class='price'>Input $/1M</th><th class='price'>Output $/1M</th></tr></thead>
 <tbody>
-<tr class='tier-A'><td class='id'>google/gemini-2.5-pro</td><td>google</td><td>1048K</td><td class='price'>$1.25</td><td class='price'>$10.00</td></tr>
-<tr class='tier-A'><td class='id'>google/gemini-2.5-pro-preview</td><td>google</td><td>1048K</td><td class='price'>$1.25</td><td class='price'>$10.00</td></tr>
 <tr class='tier-A'><td class='id'>anthropic/claude-sonnet-5</td><td>anthropic</td><td>1000K</td><td class='price'>$2.00</td><td class='price'>$10.00</td></tr>
+<tr class='tier-A'><td class='id'>google/gemini-2.5-pro</td><td>google</td><td>1048K</td><td class='price'>$1.25</td><td class='price'>$10.00</td></tr>
 <tr class='tier-A'><td class='id'>moonshotai/kimi-k3</td><td>moonshotai</td><td>1048K</td><td class='price'>$3.00</td><td class='price'>$15.00</td></tr>
 <tr class='tier-A'><td class='id'>perplexity/sonar-pro-search</td><td>perplexity</td><td>200K</td><td class='price'>$3.00</td><td class='price'>$15.00</td></tr>
 <tr class='tier-A'><td class='id'>perplexity/sonar-pro</td><td>perplexity</td><td>200K</td><td class='price'>$3.00</td><td class='price'>$15.00</td></tr>
+<tr class='tier-A'><td class='id'>anthropic/claude-opus-4.1:batch</td><td>anthropic</td><td>200K</td><td class='price'>$7.50</td><td class='price'>$37.50</td></tr>
 </tbody></table>
 <h3>Tier B — Mainstream <span style='color:#888;font-weight:400;font-size:0.85rem'>($1-10/M output)</span></h3>
 <table>
@@ -178,8 +178,6 @@
 <table>
 <thead><tr><th>Time</th><th>Model</th><th>Kind</th><th class='price'>Old $/M</th><th class='price'>New $/M</th><th class='price'>Δ%</th></tr></thead>
 <tbody>
-<tr><td>2026-08-28 03:33:58</td><td class='id'>moonshotai/kimi-k3</td><td>added</td><td class='price'>free</td><td class='price'>$15.00</td><td class='price'>—</td></tr>
-<tr><td>2026-08-28 03:33:58</td><td class='id'>perplexity/sonar-pro-search</td><td>added</td><td class='price'>free</td><td class='price'>$15.00</td><td class='price'>—</td></tr>
 <tr><td>2026-08-28 03:33:58</td><td class='id'>perplexity/sonar-pro</td><td>added</td><td class='price'>free</td><td class='price'>$15.00</td><td class='price'>—</td></tr>
 <tr><td>2026-08-28 03:33:58</td><td class='id'>deepseek/deepseek-chat-v3-0324</td><td>added</td><td class='price'>free</td><td class='price'>$1.00</td><td class='price'>—</td></tr>
 <tr><td>2026-08-28 03:33:58</td><td class='id'>minimax/minimax-m2</td><td>added</td><td class='price'>free</td><td class='price'>$1.02</td><td class='price'>—</td></tr>
@@ -193,6 +191,8 @@
 <tr><td>2026-08-28 03:33:58</td><td class='id'>nex-agi/nex-n2-pro</td><td>removed</td><td class='price'>$1.00</td><td class='price'>free</td><td class='price'>—</td></tr>
 <tr><td>2026-08-28 03:33:58</td><td class='id'>inclusionai/ling-3.0-flash</td><td>removed</td><td class='price'>$0.063</td><td class='price'>free</td><td class='price'>—</td></tr>
 <tr><td>2026-08-28 03:33:58</td><td class='id'>nex-agi/nex-n2-mini</td><td>removed</td><td class='price'>$0.100</td><td class='price'>free</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:45:02</td><td class='id'>anthropic/claude-opus-4.7-fast</td><td>added</td><td class='price'>free</td><td class='price'>$150</td><td class='price'>—</td></tr>
+<tr><td>2026-08-28 03:45:02</td><td class='id'>google/gemini-2.5-pro-preview</td><td>removed</td><td class='price'>$10.00</td><td class='price'>free</td><td class='price'>—</td></tr>
 </tbody></table>
 <div class="footer">
 Data sources: <a href="https://openrouter.ai">OpenRouter</a> (pricing) · <a href="https://hn.algolia.com/api">HN Algolia</a> (community) · Company RSS feeds (official).

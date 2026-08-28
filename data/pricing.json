@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T03:33:58.579894+00:00",
+  "generated_at": "2026-08-28T03:45:02.625360+00:00",
   "source": "OpenRouter /api/v1/models",
   "tier_bands_usd_per_million_output": {
     "S": [
@@ -27,6 +27,20 @@
   },
   "max_per_company": 2,
   "models": [
+    {
+      "id": "anthropic/claude-opus-4.7-fast",
+      "name": "Anthropic: Claude Opus 4.7 (Fast)",
+      "company": "anthropic",
+      "tier": "S",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt_per_million": 30.0,
+        "completion_per_million": 150.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": true
+    },
     {
       "id": "openai/gpt-chat-latest",
       "name": "OpenAI: GPT Chat Latest",
@@ -56,14 +70,14 @@
       "previously_selected": true
     },
     {
-      "id": "anthropic/claude-opus-4.1:batch",
-      "name": "Anthropic: Claude Opus 4.1 (batch)",
+      "id": "anthropic/claude-sonnet-5",
+      "name": "Anthropic: Claude Sonnet 5",
       "company": "anthropic",
-      "tier": "S",
-      "context_length": 200000,
+      "tier": "A",
+      "context_length": 1000000,
       "pricing": {
-        "prompt_per_million": 7.5,
-        "completion_per_million": 37.5,
+        "prompt_per_million": 2.0,
+        "completion_per_million": 10.0,
         "request": 0,
         "image": 0
       },
@@ -84,28 +98,84 @@
       "previously_selected": true
     },
     {
-      "id": "google/gemini-2.5-pro-preview",
-      "name": "Google: Gemini 2.5 Pro Preview 06-05",
-      "company": "google",
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "company": "moonshotai",
       "tier": "A",
       "context_length": 1048576,
       "pricing": {
-        "prompt_per_million": 1.25,
-        "completion_per_million": 10.0,
+        "prompt_per_million": 3.0,
+        "completion_per_million": 15.0,
         "request": 0,
-        "image": 1.25e-06
+        "image": 0
       },
       "previously_selected": true
     },
     {
-      "id": "anthropic/claude-sonnet-5",
-      "name": "Anthropic: Claude Sonnet 5",
+      "id": "perplexity/sonar-pro-search",
+      "name": "Perplexity: Sonar Pro Search",
+      "company": "perplexity",
+      "tier": "A",
+      "context_length": 200000,
+      "pricing": {
+        "prompt_per_million": 3.0,
+        "completion_per_million": 15.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": true
+    },
+    {
+      "id": "perplexity/sonar-pro",
+      "name": "Perplexity: Sonar Pro",
+      "company": "perplexity",
+      "tier": "A",
+      "context_length": 200000,
+      "pricing": {
+        "prompt_per_million": 3.0,
+        "completion_per_million": 15.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": true
+    },
+    {
+      "id": "anthropic/claude-opus-4.1:batch",
+      "name": "Anthropic: Claude Opus 4.1 (batch)",
       "company": "anthropic",
       "tier": "A",
-      "context_length": 1000000,
+      "context_length": 200000,
       "pricing": {
-        "prompt_per_million": 2.0,
-        "completion_per_million": 10.0,
+        "prompt_per_million": 7.5,
+        "completion_per_million": 37.5,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": true
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "name": "DeepSeek: DeepSeek V3 0324",
+      "company": "deepseek",
+      "tier": "B",
+      "context_length": 163840,
+      "pricing": {
+        "prompt_per_million": 0.25,
+        "completion_per_million": 1.0,
+        "request": 0,
+        "image": 0
+      },
+      "previously_selected": true
+    },
+    {
+      "id": "minimax/minimax-m2",
+      "name": "MiniMax: MiniMax M2",
+      "company": "minimax",
+      "tier": "B",
+      "context_length": 204800,
+      "pricing": {
+        "prompt_per_million": 0.255,
+        "completion_per_million": 1.02,
         "request": 0,
         "image": 0
       },
@@ -126,14 +196,14 @@
       "previously_selected": true
     },
     {
-      "id": "qwen/qwen3-next-80b-a3b-thinking",
-      "name": "Qwen: Qwen3 Next 80B A3B Thinking",
-      "company": "qwen",
+      "id": "minimax/minimax-01",
+      "name": "MiniMax: MiniMax-01",
+      "company": "minimax",
       "tier": "B",
-      "context_length": 262144,
+      "context_length": 1000192,
       "pricing": {
-        "prompt_per_million": 0.15,
-        "completion_per_million": 1.2,
+        "prompt_per_million": 0.19999999999999998,
+        "completion_per_million": 1.1,
         "request": 0,
         "image": 0
       },
@@ -154,28 +224,14 @@
       "previously_selected": true
     },
     {
-      "id": "minimax/minimax-01",
-      "name": "MiniMax: MiniMax-01",
-      "company": "minimax",
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "name": "Qwen: Qwen3 Next 80B A3B Thinking",
+      "company": "qwen",
       "tier": "B",
-      "context_length": 1000192,
+      "context_length": 262144,
       "pricing": {
-        "prompt_per_million": 0.19999999999999998,
-        "completion_per_million": 1.1,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": true
-    },
-    {
-      "id": "ibm-granite/granite-4.0-h-micro",
-      "name": "IBM: Granite 4.0 Micro",
-      "company": "ibm-granite",
-      "tier": "C",
-      "context_length": 131000,
-      "pricing": {
-        "prompt_per_million": 0.017,
-        "completion_per_million": 0.112,
+        "prompt_per_million": 0.15,
+        "completion_per_million": 1.2,
         "request": 0,
         "image": 0
       },
@@ -196,74 +252,32 @@
       "previously_selected": true
     },
     {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "company": "moonshotai",
-      "tier": "A",
-      "context_length": 1048576,
+      "id": "ibm-granite/granite-4.1-8b",
+      "name": "IBM: Granite 4.1 8B",
+      "company": "ibm-granite",
+      "tier": "C",
+      "context_length": 131072,
       "pricing": {
-        "prompt_per_million": 3.0,
-        "completion_per_million": 15.0,
+        "prompt_per_million": 0.049999999999999996,
+        "completion_per_million": 0.09999999999999999,
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
-      "id": "perplexity/sonar-pro-search",
-      "name": "Perplexity: Sonar Pro Search",
-      "company": "perplexity",
-      "tier": "A",
-      "context_length": 200000,
+      "id": "ibm-granite/granite-4.0-h-micro",
+      "name": "IBM: Granite 4.0 Micro",
+      "company": "ibm-granite",
+      "tier": "C",
+      "context_length": 131000,
       "pricing": {
-        "prompt_per_million": 3.0,
-        "completion_per_million": 15.0,
+        "prompt_per_million": 0.017,
+        "completion_per_million": 0.112,
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
-    },
-    {
-      "id": "perplexity/sonar-pro",
-      "name": "Perplexity: Sonar Pro",
-      "company": "perplexity",
-      "tier": "A",
-      "context_length": 200000,
-      "pricing": {
-        "prompt_per_million": 3.0,
-        "completion_per_million": 15.0,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
-    },
-    {
-      "id": "deepseek/deepseek-chat-v3-0324",
-      "name": "DeepSeek: DeepSeek V3 0324",
-      "company": "deepseek",
-      "tier": "B",
-      "context_length": 163840,
-      "pricing": {
-        "prompt_per_million": 0.25,
-        "completion_per_million": 1.0,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
-    },
-    {
-      "id": "minimax/minimax-m2",
-      "name": "MiniMax: MiniMax M2",
-      "company": "minimax",
-      "tier": "B",
-      "context_length": 204800,
-      "pricing": {
-        "prompt_per_million": 0.255,
-        "completion_per_million": 1.02,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
+      "previously_selected": true
     },
     {
       "id": "meta-llama/llama-3.2-1b-instruct",
@@ -277,21 +291,7 @@
         "request": 0,
         "image": 0
       },
-      "previously_selected": false
-    },
-    {
-      "id": "ibm-granite/granite-4.1-8b",
-      "name": "IBM: Granite 4.1 8B",
-      "company": "ibm-granite",
-      "tier": "C",
-      "context_length": 131072,
-      "pricing": {
-        "prompt_per_million": 0.049999999999999996,
-        "completion_per_million": 0.09999999999999999,
-        "request": 0,
-        "image": 0
-      },
-      "previously_selected": false
+      "previously_selected": true
     }
   ]
 }

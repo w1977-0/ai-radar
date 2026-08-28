@@ -1,6 +1,10 @@
 {
   "selected": [
     {
+      "id": "anthropic/claude-opus-4.7-fast",
+      "tier": "S"
+    },
+    {
       "id": "openai/gpt-chat-latest",
       "tier": "S"
     },
@@ -9,44 +13,12 @@
       "tier": "S"
     },
     {
-      "id": "anthropic/claude-opus-4.1:batch",
-      "tier": "S"
-    },
-    {
-      "id": "google/gemini-2.5-pro",
-      "tier": "A"
-    },
-    {
-      "id": "google/gemini-2.5-pro-preview",
-      "tier": "A"
-    },
-    {
       "id": "anthropic/claude-sonnet-5",
       "tier": "A"
     },
     {
-      "id": "qwen/qwen3-next-80b-a3b-instruct",
-      "tier": "B"
-    },
-    {
-      "id": "qwen/qwen3-next-80b-a3b-thinking",
-      "tier": "B"
-    },
-    {
-      "id": "stepfun/step-3.7-flash",
-      "tier": "B"
-    },
-    {
-      "id": "minimax/minimax-01",
-      "tier": "B"
-    },
-    {
-      "id": "ibm-granite/granite-4.0-h-micro",
-      "tier": "C"
-    },
-    {
-      "id": "mistralai/mistral-nemo",
-      "tier": "C"
+      "id": "google/gemini-2.5-pro",
+      "tier": "A"
     },
     {
       "id": "moonshotai/kimi-k3",
@@ -61,6 +33,10 @@
       "tier": "A"
     },
     {
+      "id": "anthropic/claude-opus-4.1:batch",
+      "tier": "A"
+    },
+    {
       "id": "deepseek/deepseek-chat-v3-0324",
       "tier": "B"
     },
@@ -69,11 +45,35 @@
       "tier": "B"
     },
     {
-      "id": "meta-llama/llama-3.2-1b-instruct",
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "tier": "B"
+    },
+    {
+      "id": "minimax/minimax-01",
+      "tier": "B"
+    },
+    {
+      "id": "stepfun/step-3.7-flash",
+      "tier": "B"
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "tier": "B"
+    },
+    {
+      "id": "mistralai/mistral-nemo",
       "tier": "C"
     },
     {
       "id": "ibm-granite/granite-4.1-8b",
+      "tier": "C"
+    },
+    {
+      "id": "ibm-granite/granite-4.0-h-micro",
+      "tier": "C"
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
       "tier": "C"
     }
   ]
