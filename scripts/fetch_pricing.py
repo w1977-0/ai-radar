@@ -278,6 +278,10 @@ def main() -> int:
                 "company": m.get("_company"),
                 "tier": m.get("_tier"),
                 "context_length": m.get("context_length"),
+                "modality": m.get("architecture", {}).get("modality", ""),
+                "input_modalities": m.get("architecture", {}).get("input_modalities", []),
+                "output_modalities": m.get("architecture", {}).get("output_modalities", []),
+                "tokenizer": m.get("architecture", {}).get("tokenizer", ""),
                 "pricing": {
                     "prompt_per_million": float(m["pricing"]["prompt"]) * 1_000_000,
                     "completion_per_million": float(m["pricing"]["completion"]) * 1_000_000,

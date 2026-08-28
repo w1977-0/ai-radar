@@ -30,6 +30,27 @@ TIER_LABELS = {
     "C": ("Economy", "<$1/M output"),
 }
 
+# Map our company names to lobehub-icons slugs (verified availability 2026-08)
+COMPANY_ICON_SLUG = {
+    "openai":      "openai",
+    "anthropic":   "anthropic",
+    "google":      "google",
+    "xai":         "xai",
+    "deepseek":    "deepseek",
+    "mistralai":   "mistral",
+    "alibaba":     "alibaba",
+    "qwen":        "qwen",
+    "zhipu":       "zhipu",
+    "moonshotai":  "kimi",
+    "minimax":     "minimax",
+    "stepfun":     "stepfun",
+    "meta-llama":  "meta",
+    "nvidia":      "nvidia",
+    "ibm-granite": "ibm",
+    "perplexity":  "perplexity",
+}
+LOBEHUB_CDN = "https://unpkg.com/@lobehub/icons-static-svg@1.94.0/icons"
+
 
 def esc(s: str) -> str:
     return html.escape(s or "")
@@ -193,9 +214,12 @@ table.data tbody tr:hover { background: var(--bg-row-hover); }
 table.data td.id { font-family: var(--font-mono); font-size: 12.5px; }
 table.data td.id a { color: var(--text); }
 table.data td.id a:hover { color: var(--accent); }
+table.data td.id .logo { width: 14px; height: 14px; vertical-align: -2px; margin-right: 6px; opacity: 0.85; }
+table.data td.id .logo-missing { display: inline-block; width: 14px; color: var(--text-dim); }
 table.data td.num, table.data td.right { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 table.data td.trend { text-align: right; font-family: var(--font-mono); font-size: 12px; }
 table.data td.ctx { text-align: right; font-family: var(--font-mono); color: var(--text-muted); font-size: 12px; }
+table.data td.type { text-align: center; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); letter-spacing: 0.2px; }
 table.data td.company { color: var(--text-muted); font-size: 12.5px; }
 
 /* Trend pills */
@@ -277,11 +301,29 @@ def render_pricing(pricing: dict, chg_index: dict[str, dict], benchmarks: dict) 
         out.append(f'<div class="tier">')
         out.append(f'<div class="tier-header"><h3><span class="tier-bullet tier-bullet-{tier}"></span>Tier {tier} — {esc(label)}</h3><span class="tier-meta">{esc(desc)}</span></div>')
         out.append('<table class="data">')
-        out.append('<thead><tr><th>Model</th><th>Company</th><th class="right">Input</th><th class="right">Output</th><th class="right">Ctx</th><th class="right">Trend</th><th class="right">AI Index</th><th class="right">Coding</th><th class="right">Speed</th></tr></thead>')
+        out.append('<thead><tr><th>Model</th><th>Company</th><th class="right">Input</th><th class="right">Output</th><th class="right">Ctx</th><th class="right">Type</th><th class="right">Trend</th><th class="right">AI Index</th><th class="right">Coding</th><th class="right">Speed</th></tr></thead>')
         out.append('<tbody>')
         for m in items:
             trend_text, trend_cls = trend_cell(m, chg_index)
             ctx = m.get("context_length") or 0
+            # Type: derive short label from modalities
+            inputs = set(m.get("input_modalities") or [])
+            outputs = set(m.get("output_modalities") or [])
+            type_parts = []
+            if "text" in inputs: type_parts.append("T")
+            if "image" in inputs: type_parts.append("img")
+            if "file" in inputs: type_parts.append("file")
+            if "audio" in inputs: type_parts.append("aud")
+            if "video" in inputs: type_parts.append("vid")
+            type_label = "+".join(type_parts) if type_parts else "—"
+            type_title = m.get("modality", "—")
+            # Logo
+            comp = m.get("company") or ""
+            icon_slug = COMPANY_ICON_SLUG.get(comp)
+            if icon_slug:
+                logo = f'<img class="logo" src="{LOBEHUB_CDN}/{icon_slug}.svg" alt="" loading="lazy">'
+            else:
+                logo = '<span class="logo logo-missing">·</span>'
             b = benchmarks.get(m["id"], {})
             ai_idx = b.get("intelligence_index")
             coding = b.get("coding_index")
@@ -297,11 +339,12 @@ def render_pricing(pricing: dict, chg_index: dict[str, dict], benchmarks: dict) 
                 ai_cell = '—'
             out.append(
                 f'<tr>'
-                f'<td class="id"><a href="https://openrouter.ai/models/{esc(m["id"])}" target="_blank" rel="noopener">{esc(m["id"])}</a></td>'
+                f'<td class="id">{logo}<a href="https://openrouter.ai/models/{esc(m["id"])}" target="_blank" rel="noopener">{esc(m["id"])}</a></td>'
                 f'<td class="company">{esc(m["company"] or "?")}</td>'
                 f'<td class="num">${fmt_price(m["pricing"]["prompt_per_million"])}</td>'
                 f'<td class="num">${fmt_price(m["pricing"]["completion_per_million"])}</td>'
                 f'<td class="ctx">{fmt_ctx(ctx)}</td>'
+                f'<td class="type" title="{esc(type_title)}">{esc(type_label)}</td>'
                 f'<td class="trend {trend_cls}">{esc(trend_text)}</td>'
                 f'<td class="num">{ai_cell}</td>'
                 f'<td class="num">{cod_str}</td>'
