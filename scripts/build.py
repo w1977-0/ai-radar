@@ -252,13 +252,14 @@ def render_header(pricing: dict) -> str:
     <a href="#news">News</a>
     <a href="#changelog">Changelog</a>
     <a href="https://github.com/w1977-0/ai-radar" target="_blank" rel="noopener">GitHub</a>
-  </nav>
-</header>
+    <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener" title="Intelligence Index source">AA</a>
+    </nav>
+    </header>
 <div class="meta">Last run: {esc(last_run_short)} UTC · {n_models} models tracked · 12 companies · updated every 6 hours · sources: OpenRouter, Hacker News, RSS</div>
 """
 
 
-def render_pricing(pricing: dict, chg_index: dict[str, dict]) -> str:
+def render_pricing(pricing: dict, chg_index: dict[str, dict], benchmarks: dict) -> str:
     models = pricing.get("models", [])
     grouped: dict[str, list[dict]] = {t: [] for t in TIER_ORDER}
     for m in models:
@@ -276,11 +277,24 @@ def render_pricing(pricing: dict, chg_index: dict[str, dict]) -> str:
         out.append(f'<div class="tier">')
         out.append(f'<div class="tier-header"><h3><span class="tier-bullet tier-bullet-{tier}"></span>Tier {tier} — {esc(label)}</h3><span class="tier-meta">{esc(desc)}</span></div>')
         out.append('<table class="data">')
-        out.append('<thead><tr><th>Model</th><th>Company</th><th class="right">Input</th><th class="right">Output</th><th class="right">Ctx</th><th class="right">Trend</th></tr></thead>')
+        out.append('<thead><tr><th>Model</th><th>Company</th><th class="right">Input</th><th class="right">Output</th><th class="right">Ctx</th><th class="right">Trend</th><th class="right">AI Index</th><th class="right">Coding</th><th class="right">Speed</th></tr></thead>')
         out.append('<tbody>')
         for m in items:
             trend_text, trend_cls = trend_cell(m, chg_index)
             ctx = m.get("context_length") or 0
+            b = benchmarks.get(m["id"], {})
+            ai_idx = b.get("intelligence_index")
+            coding = b.get("coding_index")
+            speed = b.get("speed_tokens_per_sec")
+            ai_str = f'{ai_idx:.0f}' if isinstance(ai_idx, (int, float)) and ai_idx > 0 else '—'
+            cod_str = f'{coding:.0f}' if isinstance(coding, (int, float)) and coding > 0 else '—'
+            spd_str = f'{speed:.0f}' if isinstance(speed, (int, float)) and speed > 0 else '—'
+            # AA attribution
+            ai_title = b.get("aa_name", "—")
+            if isinstance(ai_idx, (int, float)) and ai_idx > 0:
+                ai_cell = f'<span title="{esc(ai_title)} (AA)">{ai_str}</span>'
+            else:
+                ai_cell = '—'
             out.append(
                 f'<tr>'
                 f'<td class="id"><a href="https://openrouter.ai/models/{esc(m["id"])}" target="_blank" rel="noopener">{esc(m["id"])}</a></td>'
@@ -289,6 +303,9 @@ def render_pricing(pricing: dict, chg_index: dict[str, dict]) -> str:
                 f'<td class="num">${fmt_price(m["pricing"]["completion_per_million"])}</td>'
                 f'<td class="ctx">{fmt_ctx(ctx)}</td>'
                 f'<td class="trend {trend_cls}">{esc(trend_text)}</td>'
+                f'<td class="num">{ai_cell}</td>'
+                f'<td class="num">{cod_str}</td>'
+                f'<td class="num">{spd_str}</td>'
                 f'</tr>'
             )
         out.append('</tbody></table>')
@@ -364,7 +381,7 @@ def render_changelog(changelog: dict) -> str:
 def render_footer() -> str:
     return """
 <footer class="site-footer">
-  <div>Data: <a href="https://openrouter.ai">OpenRouter</a> · <a href="https://hn.algolia.com">HN Algolia</a> · company RSS</div>
+  <div>Data: <a href="https://openrouter.ai">OpenRouter</a> · <a href="https://hn.algolia.com">HN Algolia</a> · <a href="https://artificialanalysis.ai/" title="Intelligence Index">Artificial Analysis</a> · company RSS</div>
   <div>© 2026 <a href="https://github.com/w1977-0">w1977-0</a> · <a href="https://github.com/w1977-0/ai-radar">w1977-0/ai-radar</a></div>
 </footer>
 """
@@ -374,6 +391,8 @@ def main() -> int:
     pricing = json.loads((DATA_DIR / "pricing.json").read_text())
     news = json.loads((DATA_DIR / "news.json").read_text())
     changelog = json.loads((DATA_DIR / "changelog.json").read_text())
+    benchmarks_path = DATA_DIR / "benchmarks.json"
+    benchmarks = json.loads(benchmarks_path.read_text()) if benchmarks_path.exists() else {"models": {}}
     chg_index = build_changelog_index(changelog)
 
     parts = [
@@ -388,7 +407,7 @@ def main() -> int:
         "</head>",
         '<body><div class="container">',
         render_header(pricing),
-        render_pricing(pricing, chg_index),
+        render_pricing(pricing, chg_index, benchmarks.get("models", {})),
         render_news(news),
         render_changelog(changelog),
         render_footer(),

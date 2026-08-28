@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-08-28T05:11:33.248408+00:00",
+  "source": "Artificial Analysis (https://artificialanalysis.ai/)",
+  "attribution": "https://artificialanalysis.ai/",
+  "api": "https://artificialanalysis.ai/api/v2/data/llms/models",
+  "matched": 11,
+  "unmatched": 8,
+  "models": {
+    "anthropic/claude-opus-4.7-fast": {
+      "aa_id": "e9a09db3-8fd6-41dd-ba2f-20e0a2bff7f2",
+      "aa_name": "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",
+      "aa_slug": "claude-opus-4-7",
+      "match_score": 0.6,
+      "intelligence_index": 55,
+      "coding_index": 73.6,
+      "speed_tokens_per_sec": 0,
+      "ttft_s": 0,
+      "aa_input_per_million": 5,
+      "aa_output_per_million": 25
+    },
+    "openai/gpt-5.5": {
+      "aa_id": "6f1a7562-6e96-46ac-af4f-6ba5a7a3da96",
+      "aa_name": "GPT-5.5 (Non-reasoning)",
+      "aa_slug": "gpt-5-5-non-reasoning",
+      "match_score": 1.0,
+      "intelligence_index": 35.8,
+      "coding_index": 56.5,
+      "speed_tokens_per_sec": 0,
+      "ttft_s": 0,
+      "aa_input_per_million": 5,
+      "aa_output_per_million": 30
+    },
+    "anthropic/claude-sonnet-5": {
+      "aa_id": "23c86e4a-c769-43c0-a056-79e3cd15834f",
+      "aa_name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+      "aa_slug": "claude-sonnet-5",
+      "match_score": 0.95,
+      "intelligence_index": 55.3,
+      "coding_index": 71.5,
+      "speed_tokens_per_sec": 90.317,
+      "ttft_s": 104.926,
+      "aa_input_per_million": 2,
+      "aa_output_per_million": 10
+    },
+    "google/gemini-2.5-pro": {
+      "aa_id": "27202e5f-c82d-4710-92e9-4317877d4883",
+      "aa_name": "Gemini 2.5 Pro",
+      "aa_slug": "gemini-2-5-pro",
+      "match_score": 1.0,
+      "intelligence_index": 25.9,
+      "coding_index": 33.3,
+      "speed_tokens_per_sec": 0,
+      "ttft_s": 0,
+      "aa_input_per_million": 1.25,
+      "aa_output_per_million": 10
+    },
+    "moonshotai/kimi-k3": {
+      "aa_id": "f7d2fc3e-1f7b-405f-818c-07952a4af78f",
+      "aa_name": "Kimi K3 (max)",
+      "aa_slug": "kimi-k3",
+      "match_score": 1.0,
+      "intelligence_index": 59.7,
+      "coding_index": 76.2,
+      "speed_tokens_per_sec": 37.943,
+      "ttft_s": 5.478,
+      "aa_input_per_million": 3,
+      "aa_output_per_million": 15
+    },
+    "perplexity/sonar-pro": {
+      "aa_id": "3435db18-9227-45a5-8e79-9546b14b5aaa",
+      "aa_name": "Sonar Pro",
+      "aa_slug": "sonar-pro",
+      "match_score": 1.0,
+      "intelligence_index": 9.1,
+      "coding_index": null,
+      "speed_tokens_per_sec": 0,
+      "ttft_s": 0,
+      "aa_input_per_million": 0,
+      "aa_output_per_million": 0
+    },
+    "minimax/minimax-m2": {
+      "aa_id": "f74ea286-cd29-4eb4-af14-1389b19c21e5",
+      "aa_name": "MiniMax-M2",
+      "aa_slug": "minimax-m2",
+      "match_score": 1.0,
+      "intelligence_index": 28.9,
+      "coding_index": null,
+      "speed_tokens_per_sec": 0,
+      "ttft_s": 0,
+      "aa_input_per_million": 0.3,
+      "aa_output_per_million": 1.2
+    },
+    "qwen/qwen3-next-80b-a3b-instruct": {
+      "aa_id": "2698f6c6-e436-47ce-a583-dbc25596c571",
+      "aa_name": "Qwen3 Next 80B A3B Instruct",
+      "aa_slug": "qwen3-next-80b-a3b-instruct",
+      "match_score": 1.0,
+      "intelligence_index": 13.8,
+      "coding_index": null,
+      "speed_tokens_per_sec": 180.586,
+      "ttft_s": 0.98,
+      "aa_input_per_million": 0.15,
+      "aa_output_per_million": 1.2
+    },
+    "stepfun/step-3.7-flash": {
+      "aa_id": "6c7b322e-2f35-48ff-9171-fb621a726fc0",
+      "aa_name": "Step 3.7 Flash",
+      "aa_slug": "step-3-7-flash",
+      "match_score": 1.0,
+      "intelligence_index": 30.9,
+      "coding_index": 39.6,
+      "speed_tokens_per_sec": 91.661,
+      "ttft_s": 1.634,
+      "aa_input_per_million": 0.2,
+      "aa_output_per_million": 1.15
+    },
+    "qwen/qwen3-next-80b-a3b-thinking": {
+      "aa_id": "c8a79180-7d16-4474-8701-9a77c0baa56a",
+      "aa_name": "Qwen3 Next 80B A3B (Reasoning)",
+      "aa_slug": "qwen3-next-80b-a3b-reasoning",
+      "match_score": 0.7,
+      "intelligence_index": 16.9,
+      "coding_index": 17.4,
+      "speed_tokens_per_sec": 180.716,
+      "ttft_s": 1.086,
+      "aa_input_per_million": 0.15,
+      "aa_output_per_million": 1.2
+    },
+    "ibm-granite/granite-4.1-8b": {
+      "aa_id": "82ed9bd2-c97b-4c35-9312-94bb72001e36",
+      "aa_name": "Granite 4.1 8B",
+      "aa_slug": "granite-4-1-8b",
+      "match_score": 1.0,
+      "intelligence_index": 6.4,
+      "coding_index": 9.5,
+      "speed_tokens_per_sec": 126.203,
+      "ttft_s": 0.452,
+      "aa_input_per_million": 0.05,
+      "aa_output_per_million": 0.1
+    }
+  }
+}
