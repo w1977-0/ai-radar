@@ -276,7 +276,7 @@ def render_header(pricing: dict) -> str:
     <a href="#pricing">Pricing</a>
     <a href="#news">News</a>
     <a href="#changelog">Changelog</a>
-    <a href="https://github.com/w1977-0/ai-radar" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://github.com/w1977-0/model-price-radar" target="_blank" rel="noopener">GitHub</a>
     <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener" title="Intelligence Index source">AA</a>
     </nav>
     </header>
@@ -431,7 +431,7 @@ def render_footer() -> str:
     return """
 <footer class="site-footer">
   <div>Data: <a href="https://openrouter.ai">OpenRouter</a> · <a href="https://hn.algolia.com">HN Algolia</a> · <a href="https://artificialanalysis.ai/" title="Intelligence Index">Artificial Analysis</a> · company RSS</div>
-  <div>© 2026 <a href="https://github.com/w1977-0">w1977-0</a> · <a href="https://github.com/w1977-0/ai-radar">w1977-0/ai-radar</a></div>
+  <div>© 2026 <a href="https://github.com/w1977-0">w1977-0</a> · <a href="https://github.com/w1977-0/model-price-radar">w1977-0/model-price-radar</a></div>
 </footer>
 """
 
